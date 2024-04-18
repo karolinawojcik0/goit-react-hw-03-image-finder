@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SearchbarHeader = styled.header`
-top: 0;
+  top: 0;
   left: 0;
   position: sticky;
   z-index: 1100;
@@ -19,7 +19,7 @@ top: 0;
 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);`
 
 export const SearchForm = styled.form`
-display: flex;
+  display: flex;
   align-items: center;
   width: 100%;
   max-width: 600px;
@@ -41,8 +41,8 @@ export const SearchFormButton = styled.button`
   cursor: pointer;
   outline: none;
 
-    &:hover {
-    opacity: 1;
+  &:hover {
+  opacity: 1;
   }`
 
 export const SearchFormButtonLabel = styled.span`

@@ -1,4 +1,5 @@
 import React from 'react';
+import { ModalWindow, Overlay } from './Modal.css';
 
 export const Modal = ({ isOpen, imageUrl, onClose }) => {
   if (!isOpen) return null;
@@ -10,10 +11,12 @@ export const Modal = ({ isOpen, imageUrl, onClose }) => {
   };
 
   return (
-    <div className="overlay" onClick={handleClose} onKeyDown={handleClose}>
-      <div className="modal">
-        <img src={imageUrl} alt="" />
-      </div>
-    </div>
+    <>
+      <Overlay onClick={handleClose} onKeyDown={handleClose}>
+        <ModalWindow>
+          <img src={imageUrl} alt="" />
+        </ModalWindow>
+      </Overlay>
+    </>
   );
 };
