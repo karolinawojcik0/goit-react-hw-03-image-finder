@@ -143,10 +143,6 @@ img {
   cursor: zoom-in;
 }
 
-/*
- * Стили компонента Modal
- */
-
 .Overlay {
   position: fixed;
   top: 0;

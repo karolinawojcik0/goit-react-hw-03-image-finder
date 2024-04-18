@@ -1,11 +1,12 @@
 import React from 'react';
+import { LoadMoreBtn } from './Button.css';
 
 export const Button = ({ onClick, disabled }) => {
   return (
     <>
-      <button className="loadMore" onClick={onClick} disabled={disabled}>
+      <LoadMoreBtn onClick={onClick} disabled={disabled}>
         Load more
-      </button>
+      </LoadMoreBtn>
     </>
   );
 };
