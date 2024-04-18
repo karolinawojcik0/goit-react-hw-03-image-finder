@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+import {
+  SearchForm,
+  SearchFormButton,
+  SearchFormButtonLabel,
+  SearchFormInput,
+  SearchbarHeader,
+} from './Searchbar.css';
 
 export const Searchbar = ({ onSubmit }) => {
   const [searchText, setSearchText] = useState('');
@@ -14,13 +21,13 @@ export const Searchbar = ({ onSubmit }) => {
   };
 
   return (
-    <header className="searchbar">
-      <form className="form" onSubmit={handleSubmit}>
-        <button type="submit" className="button">
-          <span className="button-label">Search</span>
-        </button>
+    <SearchbarHeader>
+      <SearchForm onSubmit={handleSubmit}>
+        <SearchFormButton type="submit">
+          <SearchFormButtonLabel>Search</SearchFormButtonLabel>
+        </SearchFormButton>
 
-        <input
+        <SearchFormInput
           className="input"
           type="text"
           autoComplete="off"
@@ -29,7 +36,7 @@ export const Searchbar = ({ onSubmit }) => {
           value={searchText}
           onChange={handleChange}
         />
-      </form>
-    </header>
+      </SearchForm>
+    </SearchbarHeader>
   );
 };
