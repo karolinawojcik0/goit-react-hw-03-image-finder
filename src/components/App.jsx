@@ -35,7 +35,7 @@ export const App = () => {
 
   const handleSearch = query => {
     setQuery(query);
-    searchImages(query, true);
+    searchImages(query.trim(), true);
   };
 
   const handleLoadMore = () => {
