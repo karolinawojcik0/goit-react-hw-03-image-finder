@@ -27,9 +27,9 @@ export const SearchForm = styled.form`
   border-radius: 3px;
   overflow: hidden;`
 
-export const SearchFormButton = styled.button`
+ export const SearchFormButton = styled.button`
   display: inline-block;
-  width: 48px;
+  /* width: 48px; */
   height: 48px;
   border: 0;
   background-size: 40%;
@@ -40,19 +40,9 @@ export const SearchFormButton = styled.button`
   outline: none;
 
   &:hover {
-  opacity: 1;
-  }`
-
-export const SearchFormButtonLabel = styled.span`
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  clip-path: inset(50%);
-  border: 0;`
+    opacity: 1;
+  }
+`
 
 export const SearchFormInput = styled.input`
 display: inline-block;

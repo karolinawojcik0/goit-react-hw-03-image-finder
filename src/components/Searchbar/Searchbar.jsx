@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   SearchForm,
   SearchFormButton,
-  SearchFormButtonLabel,
   SearchFormInput,
   SearchbarHeader,
 } from './Searchbar.css';
@@ -24,7 +23,7 @@ export const Searchbar = ({ onSubmit }) => {
     <SearchbarHeader>
       <SearchForm onSubmit={handleSubmit}>
         <SearchFormButton type="submit">
-          <SearchFormButtonLabel>Search</SearchFormButtonLabel>
+          <span>Search</span>
         </SearchFormButton>
 
         <SearchFormInput
